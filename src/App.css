@@ -1,0 +1,171 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+body{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(2, 41, 66);
+  
+}
+.navbar{
+  background-color: rgb(3, 52, 83);
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  
+
+}
+.navbar .links{
+  text-align: center;
+  margin-right: 50px;
+
+  
+}
+.links a{
+  color: aquamarine;
+  text-decoration: none;
+  border-bottom: 3px solid whitesmoke;
+  padding-bottom: 2px;
+  margin: 10px;
+}
+.navbar .user{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 50px;
+
+}
+.user p{
+  font-size: 15px;
+  margin-right: 10px;
+  color: aquamarine;
+}
+.user img{
+  border-radius: 50%;
+  font-size: 100px;
+}
+.log-out{
+  background-color: aquamarine;
+  color: rgb(2, 41, 66);
+  padding: 3px;
+  border-radius: 4px;
+  margin-left: 1.5vh;
+  border: none;
+}
+input,
+textarea {
+padding: 8px 10px;
+margin: 3px;
+background-color: aquamarine;
+border: 0px transparent;
+border-radius: 5px;
+color: rgba(97, 4, 170);
+font-size: 16px;
+z-index: 1;
+}
+.google{
+  background-color: rgb(4, 84, 134);
+  color: white;
+  padding: 6px;
+  border-radius: 10px;
+}
+.create-post{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+.create-post .input-s{
+  background-color: aquamarine;
+}
+form{
+      margin-top: 50px;
+      padding: 30px 20px;
+      width: 320px; 
+      border-radius: 10px; 
+      backdrop-filter: blur(5px);
+      background-color: rgb(3, 52, 83);
+      overflow: hidden;
+     
+
+}
+.submitButton{
+  background-color: aquamarine;
+}
+.submitButton:focus{
+  background-color: rgb(18, 126, 214);
+  color: rgb(241, 240, 235);
+}
+.post-body{
+  display: flex;
+  justify-content: center;
+  
+}
+.post-div{
+  background-color: rgb(253, 253, 253);
+  width: 800px;
+  border:none;
+  border-radius: 12px;
+  background-color: rgb(3, 57, 90);
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color:white;
+  transition: 1s;
+}
+.post-div:hover{
+  transform: scale(1.012);
+}
+
+.likes-button{
+  color: red;
+  background-color: white;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media screen and (max-width:500px){
+  .links{
+   
+   display:inline-flex;
+
+  }
+  .post-div{
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+}
